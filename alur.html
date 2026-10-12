@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alur & Jadwal Pendaftaran - SPMB SMK Bhakti Kencana Ciawi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    :root {
+      --brand-red: #dc2626;
+      --brand-orange: #ea580c;
+      --brand-yellow: #f59e0b;
+      --brand-dark: #1e1b18;
+      --text-main: #0f172a;
+    }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: #fcfbf9; color: var(--text-main); }
+    .topbar-brand { background: linear-gradient(90deg, var(--brand-red) 0%, var(--brand-orange) 50%, var(--brand-yellow) 100%); }
+    .bg-brand-dark { background-color: var(--brand-dark); }
+    .logo-img { height: 48px; width: auto; object-fit: contain; }
+    .btn-brand-primary { background: linear-gradient(135deg, var(--brand-red), var(--brand-orange)); color: #ffffff; border: none; font-weight: 700; border-radius: 8px; padding: 10px 22px; }
+    .step-number { width: 42px; height: 42px; background: var(--brand-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; }
+    .footer-table th, .footer-table td { padding: 8px 12px; border-color: #44403c; color: #e7e5e4; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar-brand py-1"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark sticky-top shadow py-2">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-5" href="index.html">
+        <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-2">
+        <span class="text-white">SPMB SMK Bhakti Kencana Ciawi</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center me-3 fs-6">
+          <li class="nav-item"><a class="nav-link text-light me-2" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-warning me-2" href="alur.html">Alur & Jadwal</a></li>
+          <li class="nav-item"><a class="nav-link text-light me-2" href="syarat.html">Persyaratan</a></li>
+          <li class="nav-item"><a class="nav-link text-light me-2" href="kontak.html">Kontak</a></li>
+        </ul>
+        <a href="https://script.google.com/macros/s/AKfycbzIS1daeHYTuek9igxAQ7nbXRYtTei8yNCFaHw-U5agNj71K3K5DYQs8R4h-GPCY0mB/exec" class="btn btn-brand-primary" target="_blank">Daftar Sekarang</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="bg-brand-dark text-white py-5 border-bottom border-warning">
+    <div class="container text-center">
+      <h1 class="fw-bold">Alur & Jadwal Pendaftaran</h1>
+      <p class="text-warning opacity-90 fs-6">Tahapan lengkap pendaftaran online maupun offline serta tanggal penting SPMB</p>
+    </div>
+  </section>
+
+  <!-- JADWAL TABEL -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="fw-bold text-dark mb-4"><i class="fa-solid fa-calendar-days text-danger me-2"></i>Jadwal Pelaksanaan SPMB</h3>
+      <div class="table-responsive shadow-sm rounded-4 bg-white p-3 border border-warning">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th class="text-warning">Gelombang</th>
+              <th>Mulai Pendaftaran</th>
+              <th>Batas Akhir</th>
+              <th>Pengumuman</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold text-danger">Gelombang 1</td>
+              <td>1 November 2025</td>
+              <td>28 Februari 2026</td>
+              <td>5 Maret 2026</td>
+              <td><span class="badge bg-success">Dibuka</span></td>
+            </tr>
+            <tr>
+              <td class="fw-bold text-dark">Gelombang 2</td>
+              <td>1 Maret 2026</td>
+              <td>31 Mei 2026</td>
+              <td>5 Juni 2026</td>
+              <td><span class="badge bg-secondary">Mendatang</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODE ALUR -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <h3 class="fw-bold text-dark mb-4 text-center">Pilihan Metode Pendaftaran</h3>
+      <div class="row g-4">
+        <!-- ONLINE -->
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm p-4 border-start border-danger border-4">
+            <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-globe me-2"></i>Metode Online</h4>
+            <div class="d-flex align-items-start mb-3">
+              <div class="step-number me-3">1</div>
+              <div>
+                <h6 class="fw-bold mb-1">Akses Portal Resmi</h6>
+                <p class="text-secondary small mb-0">Buka link resmi pendaftaran di <a href="https://smkbkciawi.sch.id/spmb/" target="_blank" class="text-danger fw-bold">smkbkciawi.sch.id/spmb/</a></p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <div class="step-number me-3">2</div>
+              <div>
+                <h6 class="fw-bold mb-1">Pengisian Data & Upload Dokumen</h6>
+                <p class="text-secondary small mb-0">Lengkapi formulir online dan unggah foto/scan berkas persyaratan.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start">
+              <div class="step-number me-3">3</div>
+              <div>
+                <h6 class="fw-bold mb-1">Verifikasi Panitia</h6>
+                <p class="text-secondary small mb-0">Tunggu proses verifikasi dari tim panitia pendaftaran secara sistem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OFFLINE -->
+        <div class="col-lg-6">
+          <div class="card h-100 border-0 shadow-sm p-4 border-start border-warning border-4">
+            <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-school text-warning me-2"></i>Metode Offline</h4>
+            <div class="d-flex align-items-start mb-3">
+              <div class="step-number me-3 bg-dark">1</div>
+              <div>
+                <h6 class="fw-bold mb-1">Datang Langsung ke Kampus</h6>
+                <p class="text-secondary small mb-0">Kunjungi sekretariat SPMB pada jam kerja (Senin–Jumat 08.00–14.00 WIB)[cite: 1, 2].</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <div class="step-number me-3 bg-dark">2</div>
+              <div>
+                <h6 class="fw-bold mb-1">Penyerahan Fisik Berkas</h6>
+                <p class="text-secondary small mb-0">Serahkan kelengkapan dokumen persyaratan langsung kepada petugas panitia.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start">
+              <div class="step-number me-3 bg-dark">3</div>
+              <div>
+                <h6 class="fw-bold mb-1">Cetak Bukti Pendaftaran</h6>
+                <p class="text-secondary small mb-0">Petugas memproses data Anda dan memberikan cetak kartu pendaftaran resmi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-light pt-5 pb-4 border-top border-warning mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5 class="fw-bold text-warning mb-3"><i class="fa-solid fa-map-location-dot me-2"></i>Kunjungi Kami</h5>
+          <div class="rounded-3 overflow-hidden shadow-sm bg-secondary">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.518882806203!2d108.1460!3d-7.1812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f4f22842187a5%3A0x6b8030f08a548e6c!2sSMK%20Bhakti%20Kencana%20Ciawi!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+              width="100%" height="210" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-3">
+            <div>
+              <h5 class="fw-bold text-white mb-0">Info Sekolah</h5>
+              <p class="text-warning mb-0 fw-bold">SMK Bhakti Kencana Ciawi</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-dark table-bordered border-secondary footer-table small mb-0">
+              <tbody>
+                <tr>
+                  <th scope="row" class="bg-black text-warning" style="width: 25%;">NPSN</th>
+                  <td>20262719</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="bg-black text-warning">ALAMAT</th>
+                  <td>Jalan Raya Ciawi KM 20, Sukaresmi, Desa Pakemitankidul, Kecamatan Ciawi, Kabupaten Tasikmalaya, Provinsi Jawa Barat, Kode Pos 46156</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="bg-black text-warning">TELEPON</th>
+                  <td>(0265) 455111</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="bg-black text-warning">EMAIL</th>
+                  <td>smk_bkc@yahoo.co.id</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="bg-black text-warning">WHATSAPP</th>
+                  <td>+62 822-1925-2185</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3">
+      <p class="text-center text-secondary small mb-0">&copy; 2026 SMK Bhakti Kencana Ciawi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
