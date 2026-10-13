@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     :root {
-      --brand-red: #dc2626;
-      --brand-orange: #ea580c;
-      --brand-yellow: #f59e0b;
-      --brand-dark: #1e1b18;
+      --brand-blue: #0d6efd;
+      --brand-blue-dark: #0a58ca;
+      --brand-yellow: #ffc107;
+      --brand-dark: #0b1f3a;
       --text-main: #0f172a;
     }
-    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: #fcfbf9; color: var(--text-main); }
-    .topbar-brand { background: linear-gradient(90deg, var(--brand-red) 0%, var(--brand-orange) 50%, var(--brand-yellow) 100%); }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: #f8f9fa; color: var(--text-main); }
+    .topbar-brand { background: linear-gradient(90deg, #0d6efd 0%, #0a58ca 50%, #03285c 100%); }
     .bg-brand-dark { background-color: var(--brand-dark); }
     .logo-img { height: 48px; width: auto; object-fit: contain; }
-    .btn-brand-primary { background: linear-gradient(135deg, var(--brand-red), var(--brand-orange)); color: #ffffff; border: none; font-weight: 700; border-radius: 8px; padding: 10px 22px; }
-    .footer-table th, .footer-table td { padding: 8px 12px; border-color: #44403c; color: #e7e5e4; }
+    .btn-brand-primary { background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark)); color: #ffffff; border: none; font-weight: 700; border-radius: 8px; padding: 10px 22px; }
+    .footer-table th, .footer-table td { padding: 8px 12px; border-color: #1e3a5f; color: #e2e8f0; }
   </style>
 </head>
 <body>
@@ -27,10 +27,10 @@
   <div class="topbar-brand py-1"></div>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark sticky-top shadow py-2">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow py-2">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center fw-bold fs-5" href="index.html">
-        <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-2">
+        <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-2 bg-white p-1 rounded-circle">
         <span class="text-white">SPMB SMK Bhakti Kencana Ciawi</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -43,13 +43,13 @@
           <li class="nav-item"><a class="nav-link active fw-semibold text-warning me-2" href="syarat.html">Persyaratan</a></li>
           <li class="nav-item"><a class="nav-link text-light me-2" href="kontak.html">Kontak</a></li>
         </ul>
-        <a href="https://script.google.com/macros/s/AKfycbzIS1daeHYTuek9igxAQ7nbXRYtTei8yNCFaHw-U5agNj71K3K5DYQs8R4h-GPCY0mB/exec" class="btn btn-brand-primary" target="_blank">Daftar Sekarang</a>
+        <a href="https://script.google.com/macros/s/AKfycbzIS1daeHYTuek9igxAQ7nbXRYtTei8yNCFaHw-U5agNj71K3K5DYQs8R4h-GPCY0mB/exec" class="btn btn-warning text-dark fw-bold" target="_blank">Daftar Sekarang</a>
       </div>
     </div>
   </nav>
 
   <!-- HEADER -->
-  <section class="bg-brand-dark text-white py-5 border-bottom border-warning">
+  <section class="bg-primary text-white py-5 border-bottom border-warning">
     <div class="container text-center">
       <h1 class="fw-bold">Persyaratan & Jalur Pendaftaran</h1>
       <p class="text-warning opacity-90 fs-6">Informasi kualifikasi pendaftaran dan kelengkapan dokumen yang wajib disiapkan</p>
@@ -61,42 +61,42 @@
       <div class="row g-4">
         <!-- JALUR PENDAFTARAN -->
         <div class="col-lg-6">
-          <h3 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-route text-danger me-2"></i>Pilihan Jalur Masuk</h3>
+          <h3 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-route text-primary me-2"></i>Pilihan Jalur Masuk</h3>
           
           <div class="card border-0 shadow-sm p-4 mb-3 border-start border-warning border-5 bg-white">
-            <h5 class="fw-bold text-danger"><i class="fa-solid fa-award me-2 text-warning"></i>Jalur Prestasi (Bebas Tes Tertulis)</h5>
+            <h5 class="fw-bold text-primary"><i class="fa-solid fa-award me-2 text-warning"></i>Jalur Prestasi (Bebas Tes Tertulis)</h5>
             <p class="text-secondary small mb-0">Khusus calon siswa yang memiliki nilai rapor rata-rata minimal 85 atau memiliki sertifikat kejuaraan akademik/non-akademik minimal tingkat Kabupaten.</p>
           </div>
 
-          <div class="card border-0 shadow-sm p-4 mb-3 border-start border-danger border-5 bg-white">
-            <h5 class="fw-bold text-dark"><i class="fa-solid fa-users me-2 text-danger"></i>Jalur Reguler</h5>
+          <div class="card border-0 shadow-sm p-4 mb-3 border-start border-primary border-5 bg-white">
+            <h5 class="fw-bold text-dark"><i class="fa-solid fa-users me-2 text-primary"></i>Jalur Reguler</h5>
             <p class="text-secondary small mb-0">Jalur pendaftaran umum bagi lulusan SMP/MTs sederajat melalui proses verifikasi administrasi dan tes pemetaan minat bakat.</p>
           </div>
         </div>
 
         <!-- SYARAT DOKUMEN -->
         <div class="col-lg-6">
-          <h3 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-folder-open me-2" style="color:var(--brand-orange)"></i>Kelengkapan Dokumen Berkas</h3>
-          <div class="bg-white p-4 rounded-4 shadow-sm border border-warning">
+          <h3 class="fw-bold mb-4 text-dark"><i class="fa-solid fa-folder-open me-2 text-primary"></i>Kelengkapan Dokumen Berkas</h3>
+          <div class="bg-white p-4 rounded-4 shadow-sm border border-primary">
             <ul class="list-group list-group-flush">
               <li class="list-group-item d-flex align-items-center border-0 px-0">
-                <i class="fa-solid fa-circle-check text-danger me-3 fs-5"></i>
+                <i class="fa-solid fa-circle-check text-primary me-3 fs-5"></i>
                 <span class="fw-semibold text-dark">Fotokopi Ijazah / Surat Keterangan Lulus (SKL) SMP/MTs</span>
               </li>
               <li class="list-group-item d-flex align-items-center border-0 px-0">
-                <i class="fa-solid fa-circle-check text-danger me-3 fs-5"></i>
+                <i class="fa-solid fa-circle-check text-primary me-3 fs-5"></i>
                 <span class="fw-semibold text-dark">Fotokopi Kartu Keluarga (KK) & Akta Kelahiran</span>
               </li>
               <li class="list-group-item d-flex align-items-center border-0 px-0">
-                <i class="fa-solid fa-circle-check text-danger me-3 fs-5"></i>
+                <i class="fa-solid fa-circle-check text-primary me-3 fs-5"></i>
                 <span class="fw-semibold text-dark">Pas Foto Formal Terbaru (Ukuran 3x4 sebanyak 3 lembar)</span>
               </li>
               <li class="list-group-item d-flex align-items-center border-0 px-0">
-                <i class="fa-solid fa-circle-check text-danger me-3 fs-5"></i>
+                <i class="fa-solid fa-circle-check text-primary me-3 fs-5"></i>
                 <span class="fw-semibold text-dark">Fotokopi Rapor Semester 1 - 5</span>
               </li>
               <li class="list-group-item d-flex align-items-center border-0 px-0">
-                <i class="fa-solid fa-circle-check text-danger me-3 fs-5"></i>
+                <i class="fa-solid fa-circle-check text-primary me-3 fs-5"></i>
                 <span class="fw-semibold text-dark">Sertifikat/Piagam Penghargaan (Khusus Jalur Prestasi)</span>
               </li>
             </ul>
@@ -121,7 +121,7 @@
         </div>
         <div class="col-lg-7">
           <div class="d-flex align-items-center mb-3">
-            <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-3">
+            <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-3 bg-white p-1 rounded-circle">
             <div>
               <h5 class="fw-bold text-white mb-0">Info Sekolah</h5>
               <p class="text-warning mb-0 fw-bold">SMK Bhakti Kencana Ciawi</p>
