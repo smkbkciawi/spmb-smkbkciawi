@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     :root {
-      --brand-red: #dc2626;
-      --brand-orange: #ea580c;
-      --brand-yellow: #f59e0b;
-      --brand-dark: #1e1b18;
+      --brand-blue: #0d6efd;
+      --brand-blue-dark: #0a58ca;
+      --brand-yellow: #ffc107;
+      --brand-dark: #0b1f3a;
       --text-main: #0f172a;
     }
     body { 
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
-      background-color: #fcfbf9; 
+      background-color: #f8f9fa; 
       color: var(--text-main); 
     }
     .topbar-brand { 
-      background: linear-gradient(90deg, var(--brand-red) 0%, var(--brand-orange) 50%, var(--brand-yellow) 100%); 
+      background: linear-gradient(90deg, #0d6efd 0%, #0a58ca 50%, #03285c 100%); 
     }
     .bg-brand-dark { 
       background-color: var(--brand-dark); 
@@ -32,7 +32,7 @@
       object-fit: contain; 
     }
     .btn-brand-primary { 
-      background: linear-gradient(135deg, var(--brand-red), var(--brand-orange)); 
+      background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark)); 
       color: #ffffff; 
       border: none; 
       font-weight: 700; 
@@ -42,7 +42,7 @@
     }
     .btn-brand-primary:hover { 
       transform: translateY(-2px); 
-      box-shadow: 0 8px 20px rgba(220, 38, 38, 0.35); 
+      box-shadow: 0 8px 20px rgba(13, 110, 253, 0.35); 
       color: #ffffff; 
     }
     .info-card { 
@@ -57,8 +57,8 @@
     }
     .footer-table th, .footer-table td { 
       padding: 8px 12px; 
-      border-color: #44403c; 
-      color: #e7e5e4; 
+      border-color: #1e3a5f; 
+      color: #e2e8f0; 
     }
   </style>
 </head>
@@ -68,10 +68,10 @@
   <div class="topbar-brand py-1"></div>
 
   <!-- NAVBAR KONSISTEN -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark sticky-top shadow py-2">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow py-2">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center fw-bold fs-5" href="index.html">
-        <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-2">
+        <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-2 bg-white p-1 rounded-circle">
         <span class="text-white">SMK Bhakti Kencana Ciawi</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -84,7 +84,7 @@
           <li class="nav-item"><a class="nav-link text-light me-2" href="syarat.html">Persyaratan</a></li>
           <li class="nav-item"><a class="nav-link active fw-semibold text-warning me-2" href="kontak.html">Kontak</a></li>
         </ul>
-        <a href="https://script.google.com/macros/s/AKfycbzIS1daeHYTuek9igxAQ7nbXRYtTei8yNCFaHw-U5agNj71K3K5DYQs8R4h-GPCY0mB/exec" class="btn btn-brand-primary" target="_blank">
+        <a href="https://script.google.com/macros/s/AKfycbzIS1daeHYTuek9igxAQ7nbXRYtTei8yNCFaHw-U5agNj71K3K5DYQs8R4h-GPCY0mB/exec" class="btn btn-warning text-dark fw-bold" target="_blank">
           <i class="fa-solid fa-paper-plane me-1"></i> Daftar Sekarang
         </a>
       </div>
@@ -92,7 +92,7 @@
   </nav>
 
   <!-- HEADER PAGE -->
-  <section class="bg-brand-dark text-white py-5 border-bottom border-warning">
+  <section class="bg-primary text-white py-5 border-bottom border-warning">
     <div class="container text-center">
       <h1 class="fw-bold">Kontak & Layanan Bantuan</h1>
       <p class="text-warning opacity-90 fs-6">Tim Panitia SPMB siap membantu proses pendaftaran dan menjawab pertanyaan Anda</p>
@@ -106,23 +106,23 @@
         
         <!-- BAGIAN 1: DETAIL INFORMASI KONTAK -->
         <div class="col-lg-5">
-          <div class="info-card shadow-sm h-100 border-start border-danger border-5">
-            <h4 class="fw-bold text-dark mb-4"><i class="fa-solid fa-headset text-danger me-2"></i>Informasi Helpdesk</h4>
+          <div class="info-card shadow-sm h-100 border-start border-primary border-5">
+            <h4 class="fw-bold text-dark mb-4"><i class="fa-solid fa-headset text-primary me-2"></i>Informasi Helpdesk</h4>
             
             <div class="d-flex align-items-start mb-4">
-              <i class="fa-regular fa-clock fs-4 text-danger me-3 mt-1"></i>
+              <i class="fa-regular fa-clock fs-4 text-primary me-3 mt-1"></i>
               <div>
                 <h6 class="fw-bold text-dark mb-1">Jam Operasional Sekretariat</h6>
-                <p class="text-secondary mb-0">Senin – Jumat: 08.00 – 14.00 WIB  </p>
-                <small class="text-danger fw-semibold">*Sabtu, Minggu & Hari Libur Nasional TUTUP  </small>
+                <p class="text-secondary mb-0">Senin – Jumat: 08.00 – 14.00 WIB</p>
+                <small class="text-danger fw-semibold">*Sabtu, Minggu & Hari Libur Nasional TUTUP</small>
               </div>
             </div>
 
             <div class="d-flex align-items-start mb-4">
-              <i class="fa-solid fa-location-dot fs-4 text-danger me-3 mt-1"></i>
+              <i class="fa-solid fa-location-dot fs-4 text-primary me-3 mt-1"></i>
               <div>
                 <h6 class="fw-bold text-dark mb-1">Alamat Kampus</h6>
-                <p class="text-secondary mb-0">Jalan Raya Ciawi KM 20, Sukaresmi, Desa Pakemitankidul, Kecamatan Ciawi, Kabupaten Tasikmalaya, Jawa Barat (Kode Pos 46156)  </p>
+                <p class="text-secondary mb-0">Jalan Raya Ciawi KM 20, Sukaresmi, Desa Pakemitankidul, Kecamatan Ciawi, Kabupaten Tasikmalaya, Jawa Barat (Kode Pos 46156)</p>
               </div>
             </div>
 
@@ -130,15 +130,15 @@
               <i class="fa-brands fa-whatsapp fs-4 text-success me-3 mt-1"></i>
               <div>
                 <h6 class="fw-bold text-dark mb-1">WhatsApp Panitia</h6>
-                <p class="text-secondary mb-0">+62 822-1925-2185  </p>
+                <p class="text-secondary mb-0">+62 822-1925-2185</p>
               </div>
             </div>
 
             <div class="d-flex align-items-start">
-              <i class="fa-solid fa-phone fs-4 text-danger me-3 mt-1"></i>
+              <i class="fa-solid fa-phone fs-4 text-primary me-3 mt-1"></i>
               <div>
                 <h6 class="fw-bold text-dark mb-1">Telepon Kantor</h6>
-                <p class="text-secondary mb-0">(0265) 455111  </p>
+                <p class="text-secondary mb-0">(0265) 455111</p>
               </div>
             </div>
           </div>
@@ -146,8 +146,8 @@
 
         <!-- BAGIAN 2: FORMULIR DENGAN AUTOMATIC REDIRECT KE WA ADMIN -->
         <div class="col-lg-7">
-          <div class="info-card shadow-sm border-top border-warning border-4">
-            <h4 class="fw-bold text-dark mb-2"><i class="fa-paper-plane text-warning me-2" style="color: var(--brand-orange) !important;"></i>Kirim Pesan Bantuan</h4>
+          <div class="info-card shadow-sm border-top border-primary border-4">
+            <h4 class="fw-bold text-dark mb-2"><i class="fa-paper-plane text-primary me-2"></i>Kirim Pesan Bantuan</h4>
             <p class="text-muted small mb-4">Isi formulir di bawah ini. Anda akan otomatis dialihkan ke WhatsApp Admin Helpdesk.</p>
 
             <form id="waForm">
@@ -196,7 +196,7 @@
         <!-- INFO SEKOLAH -->
         <div class="col-lg-7">
           <div class="d-flex align-items-center mb-3">
-            <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-3">
+            <img src="https://smkbkciawi.sch.id/wp-content/uploads/2019/12/Logo-SMK-BKC.png" alt="Logo SMK BKC" class="logo-img me-3 bg-white p-1 rounded-circle">
             <div>
               <h5 class="fw-bold text-white mb-0">Info Sekolah</h5>
               <p class="text-warning mb-0 fw-bold">SMK Bhakti Kencana Ciawi</p>
@@ -207,23 +207,23 @@
               <tbody>
                 <tr>
                   <th scope="row" class="bg-black text-warning" style="width: 25%;">NPSN</th>
-                  <td>20262719  </td>
+                  <td>20262719</td>
                 </tr>
                 <tr>
                   <th scope="row" class="bg-black text-warning">ALAMAT</th>
-                  <td>Jalan Raya Ciawi KM 20, Sukaresmi, Desa Pakemitankidul, Kecamatan Ciawi, Kabupaten Tasikmalaya, Provinsi Jawa Barat, Kode Pos 46156  </td>
+                  <td>Jalan Raya Ciawi KM 20, Sukaresmi, Desa Pakemitankidul, Kecamatan Ciawi, Kabupaten Tasikmalaya, Provinsi Jawa Barat, Kode Pos 46156</td>
                 </tr>
                 <tr>
                   <th scope="row" class="bg-black text-warning">TELEPON</th>
-                  <td>(0265) 455111  </td>
+                  <td>(0265) 455111</td>
                 </tr>
                 <tr>
                   <th scope="row" class="bg-black text-warning">EMAIL</th>
-                  <td>smk_bkc@yahoo.co.id  </td>
+                  <td>smk_bkc@yahoo.co.id</td>
                 </tr>
                 <tr>
                   <th scope="row" class="bg-black text-warning">WHATSAPP</th>
-                  <td>+62 822-1925-2185  </td>
+                  <td>+62 822-1925-2185</td>
                 </tr>
               </tbody>
             </table>
@@ -243,15 +243,12 @@
     document.getElementById('waForm').addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Ambil nilai data formulir
       var nama = document.getElementById('waNama').value;
       var nomor = document.getElementById('waNomor').value;
       var pesan = document.getElementById('waPesan').value;
       
-      // Nomor Admin WhatsApp (Format Internasional)
       var adminWA = "6282219252185";
       
-      // Format Teks Pesan WhatsApp
       var teksPesan = "Halo Admin SPMB SMK Bhakti Kencana Ciawi,%0A%0A" +
                       "Saya ingin bertanya/mengirimkan kendala pendaftaran:%0A" +
                       "- *Nama Lengkap:* " + encodeURIComponent(nama) + "%0A" +
@@ -259,10 +256,8 @@
                       "- *Pertanyaan/Kendala:* " + encodeURIComponent(pesan) + "%0A%0A" +
                       "Mohon bantuannya, terima kasih.";
       
-      // URL Pengalihan WhatsApp
       var urlWA = "https://wa.me/" + adminWA + "?text=" + teksPesan;
       
-      // Buka Aplikasi / Web WhatsApp di tab baru
       window.open(urlWA, '_blank');
     });
   </script>
