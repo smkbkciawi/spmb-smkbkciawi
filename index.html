@@ -38,6 +38,37 @@
     .card-feature:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15); }
     .icon-box { width: 60px; height: 60px; background: rgba(13, 110, 253, 0.1); color: var(--brand-blue); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; }
     
+    /* Styling Tampilan Konsentrasi Keahlian */
+    .card-keahlian {
+      border: none;
+      border-radius: 18px;
+      transition: all 0.35s ease;
+      background: #ffffff;
+      overflow: hidden;
+    }
+    .card-keahlian:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 35px rgba(11, 31, 58, 0.12);
+    }
+    .keahlian-badge {
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .badge-farmasi { background-color: #d1e7dd; color: #0f5132; }
+    .badge-keperawatan { background-color: #f8d7da; color: #842029; }
+    .badge-tkj { background-color: #cff4fc; color: #055160; }
+    .icon-keahlian {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    
     .footer-table th, .footer-table td { padding: 8px 12px; border-color: #1e3a5f; color: #e2e8f0; }
   </style>
 </head>
@@ -45,7 +76,7 @@
 
   <div class="topbar-brand py-1"></div>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR (TETAP SESUAI ASLI) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow py-2">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center fw-bold fs-5" href="index.html">
@@ -77,7 +108,7 @@
         <div class="col-lg-7 mb-5 mb-lg-0">
           <span class="badge hero-badge px-3 py-2 rounded-pill fs-6 mb-3"><i class="fa-solid fa-fire me-2"></i>SPMB Tahun Ajaran 2027/2028</span>
           <h1 class="display-5 fw-bold lh-sm mb-3">Raih Masa Depan Gemilang Bersama <span class="text-warning">SMK Bhakti Kencana Ciawi</span></h1>
-          <p class="lead text-light opacity-90 mb-4">Pendaftaran Peserta Didik Baru telah dibuka. Sekolah kejuruan unggulan yang siap mencetak lulusan berkarakter, berkompeten, dan siap kerja.</p>
+          <p class="lead text-light opacity-90 mb-4">Sistem Penerimaan Murid Baru telah dibuka. Sekolah kejuruan unggulan yang siap mencetak lulusan berkarakter, berkompeten, dan siap kerja.</p>
           <div class="d-flex flex-column flex-sm-row gap-3">
             <a href="https://www.spmb-smkbkciawi.web.id/beranda" class="btn btn-brand-yellow btn-lg" target="_blank">Formulir Pendaftaran Online</a>
             <a href="alur.html" class="btn btn-outline-light btn-lg rounded-3">Lihat Alur Pendaftaran</a>
@@ -138,6 +169,109 @@
     </div>
   </header>
 
+  <!-- SEKSI REVISI: TAMPILAN KONSENTRASI KEAHLIAN (FARMASI, KEPERAWATAN, TKJ) -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill fs-6 mb-2">Program Keahlian</span>
+        <h2 class="fw-bold text-dark">Konsentrasi Keahlian Unggulan</h2>
+        <p class="text-muted fs-6 mb-0">Temukan minat keahlian yang sesuai dengan potensi dan cita-cita masa depanmu</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Farmasi -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-keahlian h-100 shadow-sm border-top border-success border-4 p-4 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="icon-keahlian bg-success-subtle text-success">
+                <i class="fa-solid fa-pills"></i>
+              </div>
+              <span class="badge keahlian-badge badge-farmasi px-3 py-2 rounded-pill">Bidang Kesehatan</span>
+            </div>
+            
+            <h4 class="fw-bold text-dark mb-2">Farmasi Klinis & Komunitas</h4>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Mempelajari ilmu pembuatan, peracikan, pengujian obat-obatan, serta manajemen pelayanan kefarmasian profesional di apotek, klinik, dan rumah sakit.
+            </p>
+
+            <div class="bg-light p-3 rounded-3 mb-4">
+              <span class="d-block fw-bold small text-dark mb-2"><i class="fa-solid fa-list-check text-success me-1"></i> Fokus Pembelajaran:</span>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Peracikan & Analisis Bahan Obat</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Manajemen & Administrasi Apotek</li>
+                <li><i class="fa-solid fa-check text-success me-2"></i>Pelayanan Resep & Etika Kefarmasian</li>
+              </ul>
+            </div>
+
+            <a href="https://www.spmb-smkbkciawi.web.id/beranda" class="btn btn-outline-success fw-bold w-100 rounded-3 mt-auto" target="_blank">
+              Pilih Farmasi <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Keperawatan -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-keahlian h-100 shadow-sm border-top border-danger border-4 p-4 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="icon-keahlian bg-danger-subtle text-danger">
+                <i class="fa-solid fa-user-nurse"></i>
+              </div>
+              <span class="badge keahlian-badge badge-keperawatan px-3 py-2 rounded-pill">Bidang Kesehatan</span>
+            </div>
+            
+            <h4 class="fw-bold text-dark mb-2">Layanan Kesehatan (Keperawatan)</h4>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Mendidik calon tenaga perawatan profesional yang memiliki empati tinggi, terampil dalam asuhan keperawatan dasar, serta pertolongan medis awal.
+            </p>
+
+            <div class="bg-light p-3 rounded-3 mb-4">
+              <span class="d-block fw-bold small text-dark mb-2"><i class="fa-solid fa-list-check text-danger me-1"></i> Fokus Pembelajaran:</span>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="fa-solid fa-check text-danger me-2"></i>Pemeriksaan Tanda Vital Pasien</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-danger me-2"></i>Asuhan Keperawatan & P3K Medis</li>
+                <li><i class="fa-solid fa-check text-danger me-2"></i>Praktik Kerja Lapangan (PKL) Rumah Sakit</li>
+              </ul>
+            </div>
+
+            <a href="https://www.spmb-smkbkciawi.web.id/beranda" class="btn btn-outline-danger fw-bold w-100 rounded-3 mt-auto" target="_blank">
+              Pilih Keperawatan <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. TKJ -->
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="card card-keahlian h-100 shadow-sm border-top border-primary border-4 p-4 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="icon-keahlian bg-primary-subtle text-primary">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="badge keahlian-badge badge-tkj px-3 py-2 rounded-pill">Bidang Teknologi</span>
+            </div>
+            
+            <h4 class="fw-bold text-dark mb-2">Teknik Komputer & Jaringan (TKJ)</h4>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              Mempelajari perakitan komputer, instalasi jaringan internet & Fiber Optic, konfigurasi router Mikrotik/Cisco, hingga pengelolaan server IT modern.
+            </p>
+
+            <div class="bg-light p-3 rounded-3 mb-4">
+              <span class="d-block fw-bold small text-dark mb-2"><i class="fa-solid fa-list-check text-primary me-1"></i> Fokus Pembelajaran:</span>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>Instalasi Network & Fiber Optic</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-primary me-2"></i>Konfigurasi Mikrotik & Cisco Router</li>
+                <li><i class="fa-solid fa-check text-primary me-2"></i>Troubleshooting Computer & Server Admin</li>
+              </ul>
+            </div>
+
+            <a href="https://www.spmb-smkbkciawi.web.id/beranda" class="btn btn-outline-primary fw-bold w-100 rounded-3 mt-auto" target="_blank">
+              Pilih TKJ <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- HIGHLIGHT KEUNGGULAN -->
   <section class="py-5 my-4">
     <div class="container">
@@ -176,7 +310,7 @@
     <div class="bg-primary rounded-4 p-5 text-white text-center position-relative overflow-hidden shadow border-start border-warning border-5">
       <h2 class="fw-bold mb-3">Siap Menjadi Bagian Dari Kami?</h2>
       <p class="text-light opacity-90 mb-4">Jangan lewatkan kesempatan untuk mendaftar pada kuota gelombang pertama.</p>
-      <a href="https://sites.google.com/view/spmb-smkbkciawi/httpsscript-google-commacrossakfycbzis1daehytuek9igxaq7nbxryttei8yncf" class="btn btn-warning btn-lg text-dark fw-bold" target="_blank">Daftar Sekarang <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      <a href="https://www.spmb-smkbkciawi.web.id/beranda" class="btn btn-warning btn-lg text-dark fw-bold" target="_blank">Daftar Sekarang <i class="fa-solid fa-arrow-right ms-2"></i></a>
     </div>
   </section>
 
